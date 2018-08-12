@@ -1,1 +1,48 @@
-<app-child></app-child>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Enter Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Pens</td>
+        <td>Rs. 10</td>
+        <td>{{product1}}</td>
+        <td>
+          <app-child (myEvent)='update()'>
+
+          </app-child>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Pencils</td>
+        <td>Rs. 7</td>
+        <td>{{product2}}</td>
+        <td>
+          <app-child (myEvent)='update1()'>
+
+          </app-child>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Erasers</td>
+        <td>Rs. 5</td>
+        <td>{{product3}}</td>
+        <td>
+          <app-child (myEvent)='update2()'>
+
+          </app-child>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
